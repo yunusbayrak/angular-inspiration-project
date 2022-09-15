@@ -11,6 +11,8 @@ export class AppComponent {
   menus = [
     { path: '/dashboard', text: 'Home' },
     { path: '/company', text: 'Company' },
+    { path: '/comments', text: 'Comments' },
+    { path: '/standalone', text: 'Standalone' },
   ];
 
   constructor(public location: Location) {}

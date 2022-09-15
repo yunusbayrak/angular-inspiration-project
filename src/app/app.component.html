@@ -1,10 +1,20 @@
 <div class="h-full flex flex-col">
-    <div class="w-full flex flex-col flex-grow">
-        <nav class="p-3 bg-gray-50 border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-            <div class="flex flex-wrap justify-between items-center mx-auto">
-                <a href="#" class="flex items-center">
-                    <svg id="rocket" xmlns="http://www.w3.org/2000/svg" width="50" height="101.678" viewBox="0 0 101.678 101.678" class="mr-1 h-6 sm:h-10">
-            <g id="Group_83" data-name="Group 83" transform="translate(-141 -696)">
+  <div class="w-full flex flex-col flex-grow">
+    <nav
+      class="p-3 bg-gray-50 border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+      <div class="flex flex-wrap justify-between items-center mx-auto">
+        <a href="#" class="flex items-center">
+          <svg
+            id="rocket"
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="101.678"
+            viewBox="0 0 101.678 101.678"
+            class="mr-1 h-6 sm:h-10">
+            <g
+              id="Group_83"
+              data-name="Group 83"
+              transform="translate(-141 -696)">
               <circle
                 id="Ellipse_8"
                 data-name="Ellipse 8"
@@ -13,7 +23,10 @@
                 r="50.839"
                 transform="translate(141 696)"
                 fill="#dd0031" />
-              <g id="Group_47" data-name="Group 47" transform="translate(165.185 720.185)">
+              <g
+                id="Group_47"
+                data-name="Group 47"
+                transform="translate(165.185 720.185)">
                 <path
                   id="Path_33"
                   data-name="Path 33"
@@ -29,10 +42,17 @@
               </g>
             </g>
           </svg>
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Angular Inspiration</span>
-                </a>
-                <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500"
-                    aria-controls="navbar-solid-bg" aria-expanded="false">
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+            >Angular Inspiration</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-solid-bg"
+          type="button"
+          class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500"
+          aria-controls="navbar-solid-bg"
+          aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg
             class="w-6 h-6"
@@ -46,13 +66,18 @@
               clip-rule="evenodd"></path>
           </svg>
         </button>
-                <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
-                    <ul class="flex flex-col mt-4 bg-gray-50 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
-                        <li *ngFor="let menu of menus">
-                            <a routerLink="{{ menu.path }}" class="block py-2 pr-4 pl-3 hover:text-white md:border-0 md:p-0" [ngClass]="{
+        <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+          <ul
+            class="flex flex-col mt-4 bg-gray-50 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+            <li *ngFor="let menu of menus">
+              <a
+                routerLink="{{ menu.path }}"
+                class="block py-2 pr-4 pl-3 hover:text-white md:border-0 md:p-0"
+                [ngClass]="{
                   'text-gray-700': location.path() !== menu.path,
                   'text-white': location.path() === menu.path
-                }">{{ menu.text }}</a
+                }"
+                >{{ menu.text }}</a
               >
             </li>
           </ul>
@@ -63,7 +88,8 @@
       <router-outlet></router-outlet>
     </div>
   </div>
-  <div class="footer p-3 bg-gray-50 border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+  <div
+    class="footer p-3 bg-gray-50 border-gray-200 dark:bg-gray-800 dark:border-gray-700">
     <div class="flex-1 mx-auto px-4 my-1" role="footer">Footer</div>
   </div>
 </div>

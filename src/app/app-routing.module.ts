@@ -9,13 +9,39 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   {
     path: 'company',
-    loadChildren: () => import('./modules/application/company/company.module').then(mod => mod.CompanyModule),
+    loadChildren: () =>
+      import('./modules/application/company/company.module').then(
+        mod => mod.CompanyModule
+      ),
   },
   { path: 'company/:id', component: CompanyComponent },
-  { path: 'login', loadChildren: () => import('./modules/general/login/login.module').then(mod => mod.LoginModule) },
+  {
+    path: 'login',
+    loadChildren: () =>
+      import('./modules/general/login/login.module').then(
+        mod => mod.LoginModule
+      ),
+  },
   {
     path: 'signup',
-    loadChildren: () => import('./modules/general/signup/signup.module').then(mod => mod.SignupModule),
+    loadChildren: () =>
+      import('./modules/general/signup/signup.module').then(
+        mod => mod.SignupModule
+      ),
+  },
+  {
+    path: 'standalone',
+    loadComponent: () =>
+      import('./modules/application/standalone/standalone.component').then(
+        mod => mod.StandaloneComponent
+      ),
+  },
+  {
+    path: 'comments',
+    loadChildren: () =>
+      import('./modules/application/comments/comments.module').then(
+        mod => mod.CommentsModule
+      ),
   },
   { path: '**', component: NotFoundComponent },
 ];
